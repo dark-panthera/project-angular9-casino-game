@@ -1,0 +1,109 @@
+@import "../../styles.scss";
+
+.header {
+  width: 100%;
+  background: $secondary;
+  height: 50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50%;
+
+  /*
+  display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+
+  color: $light;
+  padding: 0 2rem;
+
+  @extend .font-xs;
+  font-weight: 400;
+
+  /*@media (min-width: 268px)  and (max-width: 567px) {
+    grid-template-columns: 10% auto;
+  }*/
+
+  @media (min-width: 300px)  and (max-width: 699px)  {
+    grid-template-columns: 1% auto;
+  }
+
+  /*
+  @media (min-width: 700px)  and (max-width: 880px)  {
+    grid-template-columns: 10% auto;
+  }
+  */
+  @media (min-width: 700px) {
+    grid-template-columns: 1% auto;
+  }
+  @media (min-width: 952px) {
+    grid-template-columns: 10% auto;
+  }
+
+}
+
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.burger {
+  position: absolute;
+  right: 35px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-flow: column-reverse;
+  align-items: flex-end;
+
+  div {
+    border-bottom: 4px solid #fff;
+    width: 40px;
+    padding: 4px;
+  }
+  @media (min-width: 960px)  {
+    display: none;
+  }
+}
+
+.navbar {
+  /* position: absolute; */
+  /* top: 168px; */
+  position: relative;
+  color: $secondary;
+  margin: 0;
+  top: 25px;
+  background: red;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background: $tertiary;
+    top: 25px;
+    left: 0;
+    position: absolute;
+
+    @media (min-width: 968px) {
+      flex-direction: row;
+      top: -10px;
+    }
+    @media (min-width: 968px) {
+      background: none;
+    }
+
+    li {
+      padding: 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+
+
+
+}
+
+.router-link-active {
+  background: $primary;
+  border-radius: 3px;
+  color: $light;
+  outline: none;
+}

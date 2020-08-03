@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-casino"
+    }
+  },
+  "defaultProject": "angular-casino",
+  "cli": {
+    "analytics": "271c4b6b-7f12-4cfd-8da3-d3034387fb4c"
+  }
 }
