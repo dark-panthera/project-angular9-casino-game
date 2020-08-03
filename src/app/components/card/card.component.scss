@@ -1,0 +1,49 @@
+@import "../../../styles.scss";
+
+$border-radius: 10px;
+
+.card {
+  width: 100%;
+  position: relative;
+
+  border-radius:$border-radius;
+  // background: red;
+
+  &--body {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--ribbon {
+    transform: rotate(38deg);
+    position: absolute;
+    background: $primary;
+    width: 113px;
+    right: -27px;
+    top: 10px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    color: $light;
+    font-weight: bolder;
+  }
+
+  &--shadow {
+    position: absolute;
+    background: red;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    background: linear-gradient(45deg, black, transparent);
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+
+  }
+
+  img {
+
+    border-radius:$border-radius;
+  }
+}

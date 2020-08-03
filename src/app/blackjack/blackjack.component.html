@@ -1,1 +1,5 @@
-<p>blackjack works!</p>
+<h1>Black Jack</h1>
+
+<div class="container">
+  <app-card displayJackpot="true" *ngFor="let game of games" [game]="game"></app-card>
+</div>

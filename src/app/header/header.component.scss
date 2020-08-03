@@ -77,7 +77,8 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    background: $tertiary;
+    background: $secondary;
+    color: $light;
     top: 25px;
     left: 0;
     position: absolute;
@@ -85,6 +86,7 @@
     @media (min-width: 968px) {
       flex-direction: row;
       top: -10px;
+      color: $light;
     }
     @media (min-width: 968px) {
       background: none;
@@ -96,9 +98,6 @@
       font-weight: 400;
     }
   }
-
-
-
 }
 
 .router-link-active {
@@ -106,4 +105,8 @@
   border-radius: 3px;
   color: $light;
   outline: none;
+
+  @media (max-width: 868px) {
+    border-radius: 1px;
+  }
 }

@@ -5,18 +5,17 @@
     </span>
   </div>
   <div class="grid-02">
-    <span class="burger">
+    <span class="burger" (click)="toggle()">
       <div></div>
       <div></div>
       <div></div>
     </span>
-    <nav class="navbar">
+    <nav class="navbar" *ngIf="show">
       <ul class="nav">
         <li [routerLink]="['/topgames']" routerLinkActive="router-link-active">Top Games</li>
         <li [routerLink]="['/newgames']" routerLinkActive="router-link-active">New Games</li>
         <li [routerLink]="['/slots']" routerLinkActive="router-link-active">Slots</li>
         <li [routerLink]="['/jackpots']" routerLinkActive="router-link-active">Jackpots</li>
-
         <li [routerLink]="['/live']" routerLinkActive="router-link-active">Live</li>
         <li [routerLink]="['/blackjack']" routerLinkActive="router-link-active">Blackjack</li>
         <li [routerLink]="['/roulette']" routerLinkActive="router-link-active">Roulette</li>
