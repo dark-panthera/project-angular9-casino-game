@@ -14,7 +14,7 @@ export class BlackjackComponent implements OnInit {
   constructor(private gameService: GamesService) { }
 
   ngOnInit(): void {
-    this.gameService.getGameByCategory('top').subscribe((games: any) => {
+    this.gameService.getGameByCategory('blackjack').subscribe((games: any) => {
       console.log(games);
 
       this.games = games;

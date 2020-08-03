@@ -50,7 +50,7 @@ export class GamesService {
         mergeMap((games: Games[]) => {
           games.forEach((game: Games) => {
             this.jackpots$.getValue().forEach((jackpot: Jackpots) => {
-              if (jackpot.game === game.id) {
+              if (jackpot.game === game.name) {
                 game.jackpots = jackpot.amount;
               }
             });
